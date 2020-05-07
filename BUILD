@@ -775,6 +775,12 @@ java_library(
     visibility = ["//visibility:public"],
 )
 
+alias(
+    name = "protobuf_java_lite",
+    actual = ":protobuf_javalite",
+    visibility = ["//visibility:public"],
+)
+
 java_library(
     name = "protobuf_java_util",
     srcs = glob([
